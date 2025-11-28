@@ -1,50 +1,70 @@
-# Welcome to your Expo app 👋
+FamilyDo - Application de Gestion des Tâches Familiales
+📱 Présentation
+FamilyDo est une application mobile développée avec React Native et Expo pour organiser et suivre les tâches d'une famille. L'application permet de gérer les membres de la famille, les types de tâches et les tâches elles-mêmes avec un système complet d'authentification et de statistiques.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+🚀 Fonctionnalités
+🔐 Authentification
+Connexion sécurisée avec un utilisateur administrateur prédéfini
 
-## Get started
+Gestion de session persistante
 
-1. Install dependencies
+👨‍👩‍👧‍👦 Gestion des Membres
+CRUD complet des membres de la famille
 
-   ```bash
-   npm install
-   ```
+Champs : nom, prénom, téléphone, email, mot de passe
 
-2. Start the app
+Validation des emails uniques
 
-   ```bash
-   npx expo start
-   ```
+📋 Types de Tâches
+CRUD complet des catégories de tâches
 
-In the output, you'll find options to open the app in a
+Types par défaut : Ménage, Cuisine, Courses
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Gestion des libellés personnalisés
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+✅ Gestion des Tâches
+CRUD complet des tâches
 
-## Get a fresh project
+Champs : titre, description, statut, type, membre assigné
 
-When you're ready, run:
+6 statuts : Nouveau, Vue, Planifiée, En cours, Achevée, Annulée
 
-```bash
-npm run reset-project
-```
+📊 Tableau de Bord
+Statistiques en temps réel
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Graphiques de distribution (barres et circulaire)
 
-## Learn more
+Répartition par statut et par membre
 
-To learn more about developing your project with Expo, look at the following resources:
+Tâches actives vs terminées
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+🛠️ Technologies Utilisées
+Frontend : React Native, Expo, TypeScript
 
-## Join the community
+Navigation : Expo Router
 
-Join our community of developers creating universal apps.
+État Global : React Context API
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Stockage : AsyncStorage (local)
+
+UI : Composants React Native personnalisés
+
+Graphiques : Composants custom sans dépendances externes
+
+📥 Installation
+1. Installer les dépendances
+bash
+npm install
+2. Démarrer l'application
+bash
+npx expo start
+3. Tester l'application
+Scannez le QR code avec l'application Expo Go sur votre téléphone ou utilisez un émulateur.
+
+🔐 Compte de Démonstration
+Email : admin@familydo.tn
+
+Mot de passe : admin
+
+
+## le video de demo est dans /assets/demo/
